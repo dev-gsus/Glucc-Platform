@@ -1,0 +1,249 @@
+/*
+==============================================================================
+GLUCC PLATFORM
+------------------------------------------------------------------------------
+Arquivo.....: variables.css
+Tipo........: Design Tokens
+Versão......: 1.0
+
+Descrição
+------------------------------------------------------------------------------
+Este arquivo centraliza todas as variáveis globais da GLUCC Platform.
+
+Objetivos:
+
+• Padronizar cores
+• Padronizar tipografia
+• Padronizar espaçamentos
+• Padronizar bordas
+• Padronizar sombras
+• Padronizar animações
+
+IMPORTANTE
+
+Nenhum componente deve utilizar valores fixos como:
+
+❌ #FFFFFF
+❌ #2563EB
+❌ 16px
+❌ border-radius: 12px
+
+Sempre utilize as variáveis definidas neste arquivo.
+
+Exemplo:
+
+background-color: var(--color-surface);
+
+font-size: var(--font-size-md);
+
+border-radius: var(--radius-md);
+==============================================================================
+*/
+
+
+
+/*
+==============================================================================
+ROOT
+------------------------------------------------------------------------------
+O seletor :root cria variáveis globais disponíveis para toda a aplicação.
+
+Todas as variáveis são declaradas aqui utilizando o padrão:
+
+--categoria-propriedade-tamanho
+==============================================================================
+*/
+
+:root{
+
+    /* ======================================================================
+       CORES PRINCIPAIS
+       ----------------------------------------------------------------------
+       Cores utilizadas na identidade visual da GLUCC.
+    ====================================================================== */
+
+    --color-primary: #2563EB;
+    --color-primary-dark: #1D4ED8;
+    --color-primary-light: #DBEAFE;
+
+
+
+    /* ======================================================================
+       CORES DE SUPERFÍCIE
+       ----------------------------------------------------------------------
+       Utilizadas em fundos de telas, cards, menus e componentes.
+    ====================================================================== */
+
+    --color-background: #F7F9FC;
+    --color-surface: #FFFFFF;
+    --color-surface-secondary: #F8FAFC;
+
+
+
+    /* ======================================================================
+       CORES DE TEXTO
+       ----------------------------------------------------------------------
+       Definem a hierarquia visual das informações.
+    ====================================================================== */
+
+    --color-text-primary: #1E293B;
+    --color-text-secondary: #64748B;
+    --color-text-muted: #94A3B8;
+    --color-text-white: #FFFFFF;
+
+
+
+    /* ======================================================================
+       CORES DE BORDA
+       ----------------------------------------------------------------------
+       Utilizadas para separar elementos visualmente.
+    ====================================================================== */
+
+    --color-border: #E8EDF5;
+    --color-border-light: #F1F5F9;
+
+
+
+    /* ======================================================================
+       CORES DE ESTADO
+       ----------------------------------------------------------------------
+       Utilizadas para feedback ao usuário.
+    ====================================================================== */
+
+    --color-success: #16A34A;
+    --color-warning: #F59E0B;
+    --color-danger: #DC2626;
+    --color-info: #0EA5E9;
+
+
+
+    /* ======================================================================
+       CORES DE INTERAÇÃO
+       ----------------------------------------------------------------------
+       Utilizadas em hover, foco e seleção.
+    ====================================================================== */
+
+    --color-hover: #EEF5FF;
+    --color-active: #2563EB;
+    --color-focus: #BFDBFE;
+
+
+
+    /* ======================================================================
+       TIPOGRAFIA
+       ----------------------------------------------------------------------
+       Fonte oficial da GLUCC Platform.
+    ====================================================================== */
+
+    --font-family: "Inter", sans-serif;
+
+
+
+    /* ======================================================================
+       TAMANHOS DE FONTE
+       ----------------------------------------------------------------------
+       Escala tipográfica da aplicação.
+    ====================================================================== */
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 32px;
+
+
+
+    /* ======================================================================
+       PESOS DA FONTE
+       ----------------------------------------------------------------------
+       Utilizados para criar hierarquia visual.
+    ====================================================================== */
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+
+
+    /* ======================================================================
+       ESPAÇAMENTOS
+       ----------------------------------------------------------------------
+       Baseados em uma escala de 8 pontos.
+
+       Nunca utilizar valores aleatórios como:
+       13px
+       19px
+       27px
+    ====================================================================== */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-7: 32px;
+    --space-8: 40px;
+    --space-9: 48px;
+    --space-10: 56px;
+
+
+
+    /* ======================================================================
+       BORDAS ARREDONDADAS
+       ----------------------------------------------------------------------
+       Mantêm um padrão consistente em todos os componentes.
+    ====================================================================== */
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 18px;
+    --radius-full: 9999px;
+
+
+
+    /* ======================================================================
+       SOMBRAS
+       ----------------------------------------------------------------------
+       Utilizadas em cards, menus, modais e popups.
+
+       Mantemos sombras suaves para preservar um visual moderno.
+    ====================================================================== */
+
+    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+
+    --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.10);
+
+    --shadow-lg: 0 10px 30px rgba(15, 23, 42, 0.12);
+
+
+
+    /* ======================================================================
+       TRANSIÇÕES
+       ----------------------------------------------------------------------
+       Mantêm animações consistentes em toda a aplicação.
+    ====================================================================== */
+
+    --transition-fast: 0.15s ease-in-out;
+
+    --transition-normal: 0.25s ease-in-out;
+
+    --transition-slow: 0.35s ease-in-out;
+
+
+
+    /* ======================================================================
+       LAYOUT
+       ----------------------------------------------------------------------
+       Medidas padrão utilizadas em componentes estruturais.
+    ====================================================================== */
+
+    --sidebar-width: 280px;
+
+    --header-height: 72px;
+
+}
